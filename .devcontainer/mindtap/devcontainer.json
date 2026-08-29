@@ -1,0 +1,11 @@
+{
+  "name": "MindTap",
+  "image": "ghcr.io/internal-csp-hes-engineering/container-images-mysql:latest",
+  "forwardPorts": [3005],
+  "portsAttributes": {
+    "3005": {
+      "label": "cengage-companion",
+      "onAutoForward": "silent"
+    }
+  }
+}
