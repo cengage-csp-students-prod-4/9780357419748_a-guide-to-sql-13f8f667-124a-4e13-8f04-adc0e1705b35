@@ -4,4 +4,4 @@ Check: 1
 Test: Create the `REP` table
 Reason: The following error is preventing tests from completing: 1146 (42S02): Table 'KimTay.REP' doesn't exist
 Error : ProgrammingError - 1146 (42S02): Table 'KimTay.REP' doesn't exist
-Timestamp: 2026-09-17 21:16:41.242280
+Timestamp: 2026-09-17 21:18:19.442198
