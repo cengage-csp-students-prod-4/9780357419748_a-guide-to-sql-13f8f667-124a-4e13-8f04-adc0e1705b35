@@ -7,7 +7,7 @@ CREATE table REP (
     STATE char(2),
     POSTAL char(5),
     CELL_PHONE char(12),
-    COMISSION decimal(7,2),
+    COMMISSION decimal(7,2),
     RATE decimal(3,2)
 );
 
