@@ -1,4 +1,4 @@
-CREATE table Rep (
+CREATE table REP (
     REP_ID char(2) PRIMARY KEY,
     FIRST_NAME varchar(20),
     LAST_NAME varchar(20),
@@ -10,3 +10,7 @@ CREATE table Rep (
     COMISSION decimal(7,2),
     RATE decimal(3,2)
 );
+
+INSERT INTO REP (REP_ID, FIRST_NAME, LAST_NAME, ADDRESS, CITY, STATE, POSTAL, CELL_PHONE, COMMISSION, RATE)
+VALUES
+('35','FRED', 'KISER', '427 Billings DR', 'CODY', 'WY', '82414', '307-555-6309', 0.00, 0.05);
