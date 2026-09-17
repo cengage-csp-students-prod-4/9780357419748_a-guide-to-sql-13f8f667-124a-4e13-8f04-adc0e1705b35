@@ -1,4 +1,4 @@
-CREATE table REP (
+   CREATE table REP (
     REP_ID char(2) PRIMARY KEY,
     FIRST_NAME varchar(20),
     LAST_NAME varchar(20),

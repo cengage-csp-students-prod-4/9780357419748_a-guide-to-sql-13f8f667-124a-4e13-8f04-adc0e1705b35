@@ -128,6 +128,38 @@ INSERT INTO `ITEM` VALUES ('AD72','Dog Feeding Station',12,'DOG','B',79.99),('BC
 UNLOCK TABLES;
 
 --
+-- Table structure for table `REP`
+--
+
+DROP TABLE IF EXISTS `REP`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `REP` (
+  `REP_ID` char(2) NOT NULL,
+  `FIRST_NAME` varchar(20) DEFAULT NULL,
+  `LAST_NAME` varchar(20) DEFAULT NULL,
+  `ADDRESS` varchar(20) DEFAULT NULL,
+  `CITY` varchar(15) DEFAULT NULL,
+  `STATE` char(2) DEFAULT NULL,
+  `POSTAL` char(5) DEFAULT NULL,
+  `CELL_PHONE` char(12) DEFAULT NULL,
+  `COMMISSION` decimal(7,2) DEFAULT NULL,
+  `RATE` decimal(3,2) DEFAULT NULL,
+  PRIMARY KEY (`REP_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `REP`
+--
+
+LOCK TABLES `REP` WRITE;
+/*!40000 ALTER TABLE `REP` DISABLE KEYS */;
+INSERT INTO `REP` VALUES ('35','Fred','Kiser','427 Billings Dr','Cody','WY','82414','307-555-6309',0.00,0.05);
+/*!40000 ALTER TABLE `REP` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `Rep`
 --
 
@@ -203,4 +235,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-17 22:01:58
+-- Dump completed on 2026-09-17 22:08:04
