@@ -1,0 +1,27 @@
+
+Status: FAILED!
+Check: 1
+Test: Drop the `REP` table
+Reason: Expected:
++------------------+
+| Tables_in_KimTay |
++------------------+
+|     CUSTOMER     |
+|     INVOICES     |
+|   INVOICE_LINE   |
+|       ITEM       |
+|    SALES_REP     |
++------------------+
+Found:
++------------------+
+| Tables_in_KimTay |
++------------------+
+|     CUSTOMER     |
+|     INVOICES     |
+|   INVOICE_LINE   |
+|       ITEM       |
+|       Rep        |
+|    SALES_REP     |
++------------------+
+Error : AssertionError - 
+Timestamp: 2026-09-17 22:16:17.811598
