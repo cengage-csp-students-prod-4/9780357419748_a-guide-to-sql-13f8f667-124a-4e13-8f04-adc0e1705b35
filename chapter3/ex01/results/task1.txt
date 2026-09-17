@@ -2,35 +2,6 @@
 Status: FAILED!
 Check: 1
 Test: Create the `REP` table
-Reason: Expected:
-+------------+--------------+------+-----+---------+-------+
-|   Field    |     Type     | Null | Key | Default | Extra |
-+------------+--------------+------+-----+---------+-------+
-|   REP_ID   |   char(2)    |  NO  | PRI |  NULL   |       |
-| FIRST_NAME | varchar(20)  | YES  |     |  NULL   |       |
-| LAST_NAME  | varchar(20)  | YES  |     |  NULL   |       |
-|  ADDRESS   | varchar(20)  | YES  |     |  NULL   |       |
-|    CITY    | varchar(15)  | YES  |     |  NULL   |       |
-|   STATE    |   char(2)    | YES  |     |  NULL   |       |
-|   POSTAL   |   char(5)    | YES  |     |  NULL   |       |
-| CELL_PHONE |   char(12)   | YES  |     |  NULL   |       |
-| COMMISSION | decimal(7,2) | YES  |     |  NULL   |       |
-|    RATE    | decimal(3,2) | YES  |     |  NULL   |       |
-+------------+--------------+------+-----+---------+-------+
-Found:
-+------------+--------------+------+-----+---------+-------+
-|   Field    |     Type     | Null | Key | Default | Extra |
-+------------+--------------+------+-----+---------+-------+
-|   REP_ID   |   char(2)    |  NO  | PRI |  NULL   |       |
-| FIRST_NAME | varchar(20)  | YES  |     |  NULL   |       |
-| LAST_NAME  | varchar(20)  | YES  |     |  NULL   |       |
-|  ADDRESS   | varchar(20)  | YES  |     |  NULL   |       |
-|    CITY    | varchar(15)  | YES  |     |  NULL   |       |
-|   STATE    |   char(2)    | YES  |     |  NULL   |       |
-|   POSTAL   |   char(5)    | YES  |     |  NULL   |       |
-| CELL_PHONE |   char(12)   | YES  |     |  NULL   |       |
-| COMISSION  | decimal(7,2) | YES  |     |  NULL   |       |
-|    RATE    | decimal(3,2) | YES  |     |  NULL   |       |
-+------------+--------------+------+-----+---------+-------+
-Error : AssertionError - 
-Timestamp: 2026-09-17 21:24:09.575216
+Reason: The following error is preventing tests from completing: 1146 (42S02): Table 'KimTay.REP' doesn't exist
+Error : ProgrammingError - 1146 (42S02): Table 'KimTay.REP' doesn't exist
+Timestamp: 2026-09-17 21:29:02.596609
