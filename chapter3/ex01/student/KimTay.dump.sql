@@ -205,4 +205,3 @@ UNLOCK TABLES;
 
 -- Dump completed on 2026-09-17 21:00:04
 
-DESCRIBE REP;
