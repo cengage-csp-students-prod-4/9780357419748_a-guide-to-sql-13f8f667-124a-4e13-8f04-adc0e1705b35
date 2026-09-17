@@ -128,37 +128,6 @@ INSERT INTO `ITEM` VALUES ('AD72','Dog Feeding Station',12,'DOG','B',79.99),('BC
 UNLOCK TABLES;
 
 --
--- Table structure for table `Rep`
---
-
-DROP TABLE IF EXISTS `Rep`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `Rep` (
-  `Rep_ID` char(2) NOT NULL,
-  `First_Name` varchar(20) DEFAULT NULL,
-  `Last_Name` varchar(20) DEFAULT NULL,
-  `Address` varchar(20) DEFAULT NULL,
-  `CITY` varchar(15) DEFAULT NULL,
-  `STATE` char(2) DEFAULT NULL,
-  `Postal` char(5) DEFAULT NULL,
-  `Cell_Phone` char(12) DEFAULT NULL,
-  `COMMISSION` decimal(7,2) DEFAULT NULL,
-  `Rate` decimal(3,2) DEFAULT NULL,
-  PRIMARY KEY (`Rep_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `Rep`
---
-
-LOCK TABLES `Rep` WRITE;
-/*!40000 ALTER TABLE `Rep` DISABLE KEYS */;
-/*!40000 ALTER TABLE `Rep` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `SALES_REP`
 --
 
@@ -203,4 +172,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-17 22:15:50
+-- Dump completed on 2026-09-17 22:20:18
