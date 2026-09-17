@@ -204,7 +204,7 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2026-09-17 21:00:04
-CREATE table Rep (
+CREATE table REP (
     REP_ID char(2) PRIMARY KEY,
     FIRST_NAME varchar(20),
     LAST_NAME varchar(20),
@@ -216,3 +216,4 @@ CREATE table Rep (
     COMISSION decimal(7,2),
     RATE decimal(3,2)
 );
+
