@@ -185,6 +185,35 @@ INSERT INTO `SERVICE_REQUEST` VALUES (1,11,2,2,'The second bedroom upstairs is n
 UNLOCK TABLES;
 
 --
+-- Table structure for table `SUMMER_SCHOOL_RENTALS`
+--
+
+DROP TABLE IF EXISTS `SUMMER_SCHOOL_RENTALS`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `SUMMER_SCHOOL_RENTALS` (
+  `PROPERTY_ID` decimal(10,0) NOT NULL,
+  `OFFICE_NUM` decimal(10,0) DEFAULT NULL,
+  `ADDRESS` varchar(100) DEFAULT NULL,
+  `SQR_FT` smallint DEFAULT NULL,
+  `FLOORS` tinyint DEFAULT NULL,
+  `WEEKLY_RENT` smallint DEFAULT NULL,
+  `OWNER_NUM` char(5) DEFAULT NULL,
+  PRIMARY KEY (`PROPERTY_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `SUMMER_SCHOOL_RENTALS`
+--
+
+LOCK TABLES `SUMMER_SCHOOL_RENTALS` WRITE;
+/*!40000 ALTER TABLE `SUMMER_SCHOOL_RENTALS` DISABLE KEYS */;
+INSERT INTO `SUMMER_SCHOOL_RENTALS` VALUES (13,1,'5867 Goodwin Ave',1650,1,400,'CO103');
+/*!40000 ALTER TABLE `SUMMER_SCHOOL_RENTALS` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping routines for database 'StayWell'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -197,4 +226,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-09-18  0:17:18
+-- Dump completed on 2026-09-18  0:31:56
