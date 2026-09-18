@@ -1,0 +1,7 @@
+
+Status: FAILED!
+Check: 1
+Test: Create the `SUMMER_SCHOOL_RENTALS` table
+Reason: The following error is preventing tests from completing: 1146 (42S02): Table 'StayWell.SUMMER_SCHOOL_RENTALS' doesn't exist
+Error : ProgrammingError - 1146 (42S02): Table 'StayWell.SUMMER_SCHOOL_RENTALS' doesn't exist
+Timestamp: 2026-09-18 00:25:43.616667
