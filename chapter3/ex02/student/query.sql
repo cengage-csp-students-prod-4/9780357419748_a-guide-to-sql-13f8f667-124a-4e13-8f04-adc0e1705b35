@@ -1,1 +1,9 @@
--- Write your query here
+CREATE TABLE SUMMER_SCHOOL_RENTALS (
+    PROPERTY_ID NUMERIC PRIMARY KEY,
+    OFFICE_NUM NUMERIC,
+    ADDRESS varchar(100),
+    SQR_FT smallint,
+    FLOORS tinyint,
+    WEEKLY_RENT smallint,
+    OWNER_NUM char(5)
+);
